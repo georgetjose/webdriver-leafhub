@@ -32,4 +32,10 @@ public class LoginPage extends ProjectHooks{
 		return new DashboardPage();
 	}
 
+	public ForgotPasswordPage clickForgotPassword() {
+		click(locateElement(Locators.LINK_TEXT, "Forgot Password?"));
+		reportStep("Forgot Password link clicked successfully", "pass");
+		return new ForgotPasswordPage();
+	}
+
 }
